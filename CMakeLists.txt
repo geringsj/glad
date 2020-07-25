@@ -15,7 +15,7 @@ elseif(WIN32)
 endif()
 
 add_library(glad SHARED ${header_files} ${source_files})
-set_target_properties(glad PROPERTIES LINKER_LANGUAGE CXX)
+set_target_properties(glad PROPERTIES LINKER_LANGUAGE C)
 target_compile_definitions(glad 
   PRIVATE GLAD_GLAPI_EXPORT_BUILD
   PUBLIC GLAD_GLAPI_EXPORT)
